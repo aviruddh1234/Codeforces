@@ -16,13 +16,13 @@ for _ in range(t):
       a = max(arr[i],arr[j])
       b = min(arr[i],arr[j])
       
-      if gcd(a,b) <= 2:
+      if gcd(a,b) > 2:
         flag = False 
         break
     
   
   if flag:
-    print("No")
-  else:
     print("Yes")
+  else:
+    print("No")
       
